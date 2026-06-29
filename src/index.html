@@ -1,3 +1,33 @@
-<h1>Sistema de Gestión Profesional - Demo</h1>
-<p>Interfaz de captura de tickets. Este módulo está diseñado para la validación automática con Stripe.</p>
-<button disabled>Procesar Ticket (Disponible en versión Full para Patrocinadores)</button>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo - Sistema de Gestión</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Gestión Profesional (Demo)</h1>
+        <p>Esta es la interfaz de captura. Prueba el flujo de datos.</p>
+        
+        <div id="capture-box">
+            <input type="text" id="ticket" placeholder="Número de Ticket">
+            <button onclick="simulateCapture()">Simular Captura</button>
+        </div>
+        
+        <div id="status"></div>
+    </div>
+
+    <script>
+        function simulateCapture() {
+            const ticket = document.getElementById('ticket').value;
+            const status = document.getElementById('status');
+            if(ticket) {
+                status.innerHTML = `<p style="color: #00ff88;">✓ Ticket ${ticket} registrado en cola de espera.</p>`;
+            } else {
+                status.innerHTML = `<p style="color: #ff4444;">Por favor, ingresa un número de ticket.</p>`;
+            }
+        }
+    </script>
+</body>
+</html>
