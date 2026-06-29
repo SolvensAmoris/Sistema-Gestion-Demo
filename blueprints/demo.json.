@@ -1,5 +1,9 @@
 {
-    "name": "Integration Stripe, Google Sheets - DEMO",
-    "flow": [],
-    "note": "Versión demo. La automatización real requiere el archivo blueprint completo disponible para patrocinadores."
+  "info": "Esta es una vista previa del Blueprint",
+  "status": "demo",
+  "data_structure_example": {
+    "ticket_id": "TICKET-123",
+    "status": "pending_validation"
+  },
+  "note": "El blueprint funcional completo se entrega tras el apoyo al crowdfunding."
 }
